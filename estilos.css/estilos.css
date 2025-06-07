@@ -14,12 +14,12 @@
   --sombra-profunda: 0 8px 18px rgba(0, 95, 115, 0.3);
 }
 /* Reset básico */
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body {
+body{
   background: #93b7be;
   color: var(--color-texto);
   line-height: 1.6;
