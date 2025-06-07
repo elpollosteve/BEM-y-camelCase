@@ -1,5 +1,5 @@
 /* Variables globales */
-:root {
+:root{
   --color-principal: #005f73; /* Azul oscuro */
   --color-hover: #94d2bd; /* Verde agua claro */
   --color-fondo: #cfe8f0; /* Fondo muy claro */
@@ -26,7 +26,7 @@ body{
   padding: 20px;
   font-family: var(--fuente-general);
 }
-.container {
+.container{
   max-width: 1100px;
   margin: 0 auto;
 }
