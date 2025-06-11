@@ -73,7 +73,7 @@ section{
 section:hover{
   box-shadow: 0 12px 24px rgba(0, 95, 115, 0.25);
 }
-/* ========== Textos ========== */
+/* Textos */
 p,
 li{
   font-size: 1.1rem;
