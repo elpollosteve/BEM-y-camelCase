@@ -4,7 +4,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 /* Variables CSS personalizadas */
 :root {
     --color-primario: #3b82f6;
@@ -26,7 +25,6 @@
     --transicion-rapida: all 0.2s ease-out;
     --transicion-elastica: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-
 /* Estilos generales para la página */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -36,7 +34,6 @@ body {
     color: var(--color-texto);
     overflow-x: hidden;
 }
-
 /* Efectos de partículas de fondo más sutiles */
 body::before {
     content: '';
@@ -53,19 +50,16 @@ body::before {
     z-index: -1;
     animation: floatParticles 15s ease-in-out infinite alternate;
 }
-
 @keyframes floatParticles {
     0% { opacity: 0.3; transform: translateY(0px); }
     100% { opacity: 0.1; transform: translateY(-10px); }
 }
-
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
     position: relative;
 }
-
 /* Estilos para el encabezado con animación más suave */
 header {
     background: var(--gradiente-principal);
@@ -79,7 +73,6 @@ header {
     animation: slideInDown 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     transform: translateZ(0);
 }
-
 header::before {
     content: '';
     position: absolute;
@@ -90,12 +83,10 @@ header::before {
     background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, transparent 70%);
     animation: gentleRotate 25s linear infinite;
 }
-
 @keyframes gentleRotate {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
-
 @keyframes slideInDown {
     0% {
         opacity: 0;
@@ -106,7 +97,6 @@ header::before {
         transform: translate3d(0, 0, 0);
     }
 }
-
 /* Título principal */
 h1#principal {
     font-size: 2.5em;
@@ -116,7 +106,6 @@ h1#principal {
     z-index: 1;
     animation: titleGlow 0.8s ease-out 0.3s both;
 }
-
 @keyframes titleGlow {
     0% {
         opacity: 0;
@@ -127,7 +116,6 @@ h1#principal {
         transform: scale(1);
     }
 }
-
 /* Párrafo descriptivo */
 .parrafo {
     font-size: 1.2em;
@@ -136,7 +124,6 @@ h1#principal {
     z-index: 1;
     animation: fadeInUp 0.8s ease-out 0.5s both;
 }
-
 /* Estilos específicos para las secciones BEM y camelCase - SIMPLIFICADOS */
 .bem, .case {
     margin: 30px 0;
@@ -152,13 +139,11 @@ h1#principal {
     animation: fadeInUp 0.6s ease-out;
     transform: translateZ(0);
 }
-
 /* Hover más simple y estable */
 .bem:hover, .case:hover {
     transform: translateY(-2px);
     box-shadow: var(--sombra-fuerte);
 }
-
 .bem::before {
     content: '';
     position: absolute;
@@ -171,7 +156,6 @@ h1#principal {
     transform-origin: left;
     animation: expandBar 0.6s ease-out 0.2s forwards;
 }
-
 .case::before {
     content: '';
     position: absolute;
@@ -184,12 +168,10 @@ h1#principal {
     transform-origin: left;
     animation: expandBar 0.6s ease-out 0.2s forwards;
 }
-
 @keyframes expandBar {
     0% { transform: scaleX(0); }
     100% { transform: scaleX(1); }
 }
-
 @keyframes fadeInUp {
     0% {
         opacity: 0;
@@ -200,7 +182,6 @@ h1#principal {
         transform: translate3d(0, 0, 0);
     }
 }
-
 /* Subtítulos de las secciones - Color armónico */
 .subtitulo {
     font-size: 1.8em;
@@ -210,7 +191,6 @@ h1#principal {
     position: relative;
     animation: slideInLeft 0.6s ease-out 0.1s both;
 }
-
 .subtitulo::after {
     content: '';
     position: absolute;
@@ -221,7 +201,6 @@ h1#principal {
     background: var(--gradiente-principal);
     animation: underlineExpand 0.8s ease-out 0.5s forwards;
 }
-
 @keyframes slideInLeft {
     0% {
         opacity: 0;
@@ -232,12 +211,10 @@ h1#principal {
         transform: translateX(0);
     }
 }
-
 @keyframes underlineExpand {
     0% { width: 0; }
     100% { width: 60px; }
 }
-
 /* Estilos de tablas */
 table.comparativa {
     width: 100%;
@@ -250,7 +227,6 @@ table.comparativa {
     backdrop-filter: blur(10px);
     animation: tableSlideIn 0.8s ease-out;
 }
-
 @keyframes tableSlideIn {
     0% {
         opacity: 0;
@@ -261,13 +237,11 @@ table.comparativa {
         transform: translateY(0);
     }
 }
-
 table.comparativa th, table.comparativa td {
     padding: 15px;
     text-align: left;
     border-bottom: 1px solid rgba(0,0,0,0.1);
 }
-
 table.comparativa th {
     background: var(--gradiente-principal);
     color: white;
@@ -275,20 +249,16 @@ table.comparativa th {
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
-
 table.comparativa tbody tr {
     transition: var(--transicion-suave);
 }
-
 /* Hover de tabla más simple */
 table.comparativa tbody tr:hover {
     background: rgba(59, 130, 246, 0.08);
 }
-
 table.comparativa tbody tr:nth-child(even) {
     background: rgba(248, 250, 252, 0.5);
 }
-
 table.comparativa caption {
     font-size: 1.3em;
     margin-bottom: 15px;
@@ -296,20 +266,17 @@ table.comparativa caption {
     color: var(--color-texto);
     text-align: center;
 }
-
 /* Estilos para listas */
 ol, ul {
     margin: 15px 0;
     padding-left: 25px;
 }
-
 ol li, ul li {
     margin-bottom: 8px;
     transition: var(--transicion-suave);
     opacity: 0;
     animation: listItemFade 0.5s ease-out forwards;
 }
-
 ol li:nth-child(1) { animation-delay: 0.1s; }
 ol li:nth-child(2) { animation-delay: 0.2s; }
 ol li:nth-child(3) { animation-delay: 0.3s; }
@@ -321,7 +288,6 @@ ul li:nth-child(2) { animation-delay: 0.2s; }
 ul li:nth-child(3) { animation-delay: 0.3s; }
 ul li:nth-child(4) { animation-delay: 0.4s; }
 ul li:nth-child(5) { animation-delay: 0.5s; }
-
 @keyframes listItemFade {
     0% {
         opacity: 0;
@@ -332,13 +298,11 @@ ul li:nth-child(5) { animation-delay: 0.5s; }
         transform: translateX(0);
     }
 }
-
 /* Hover más simple para listas */
 ol li:hover, ul li:hover {
     color: var(--color-primario);
     transform: translateX(3px);
 }
-
 /* Estilos para código */
 code {
     background: linear-gradient(135deg, #3b82f6, #1e40af);
@@ -350,12 +314,10 @@ code {
     box-shadow: var(--sombra-suave);
     transition: var(--transicion-rapida);
 }
-
 code:hover {
     transform: scale(1.05);
     box-shadow: var(--sombra-media);
 }
-
 pre code {
     display: block;
     background: linear-gradient(135deg, #2d3748, #4a5568);
@@ -368,7 +330,6 @@ pre code {
     border: 1px solid rgba(255, 255, 255, 0.1);
     animation: codeBlockSlide 0.6s ease-out;
 }
-
 @keyframes codeBlockSlide {
     0% {
         opacity: 0;
@@ -379,7 +340,6 @@ pre code {
         transform: translateX(0);
     }
 }
-
 /* Estilos para secciones - HOVER SIMPLIFICADO */
 section {
     margin: 40px 0;
@@ -394,7 +354,6 @@ section {
     animation: sectionSlideIn 0.8s ease-out;
     transition: var(--transicion-suave);
 }
-
 @keyframes sectionSlideIn {
     0% {
         opacity: 0;
@@ -405,13 +364,11 @@ section {
         transform: translateY(0) scale(1);
     }
 }
-
 /* Hover más simple para sections */
 section:hover {
     transform: translateY(-2px);
     box-shadow: var(--sombra-fuerte);
 }
-
 section::before {
     content: '';
     position: absolute;
@@ -423,12 +380,10 @@ section::before {
     transform: scaleX(0);
     animation: sectionBarExpand 0.8s ease-out 0.3s forwards;
 }
-
 @keyframes sectionBarExpand {
     0% { transform: scaleX(0); }
     100% { transform: scaleX(1); }
 }
-
 /* Estilos para metodología */
 .metodologia__titulo {
     color: var(--color-subtitulo);
@@ -438,7 +393,6 @@ section::before {
     position: relative;
     animation: slideInLeft 0.6s ease-out;
 }
-
 .metodologia__titulo::after {
     content: '';
     position: absolute;
@@ -448,12 +402,10 @@ section::before {
     height: 3px;
     background: var(--color-acento);
 }
-
 .metodologia__lista {
     list-style: none;
     padding-left: 0;
 }
-
 .metodologia__lista li {
     position: relative;
     padding-left: 25px;
@@ -461,12 +413,10 @@ section::before {
     opacity: 0;
     animation: methodItemSlide 0.5s ease-out forwards;
 }
-
 .metodologia__lista li:nth-child(1) { animation-delay: 0.1s; }
 .metodologia__lista li:nth-child(2) { animation-delay: 0.2s; }
 .metodologia__lista li:nth-child(3) { animation-delay: 0.3s; }
 .metodologia__lista li:nth-child(4) { animation-delay: 0.4s; }
-
 @keyframes methodItemSlide {
     0% {
         opacity: 0;
@@ -477,7 +427,6 @@ section::before {
         transform: translateX(0);
     }
 }
-
 .metodologia__lista li::before {
     content: '✨';
     position: absolute;
@@ -485,12 +434,10 @@ section::before {
     top: 0;
     animation: sparkle 2s ease-in-out infinite;
 }
-
 @keyframes sparkle {
     0%, 100% { transform: scale(1); }
     50% { transform: scale(1.2); }
 }
-
 /* Estilos para figura */
 figure {
     margin: 25px 0;
@@ -501,7 +448,6 @@ figure {
     box-shadow: var(--sombra-suave);
     animation: figureFloat 0.8s ease-out;
 }
-
 @keyframes figureFloat {
     0% {
         opacity: 0;
@@ -512,14 +458,12 @@ figure {
         transform: translateY(0);
     }
 }
-
 figcaption {
     font-weight: 600;
     margin-bottom: 15px;
     color: var(--color-subtitulo);
     font-size: 1.1em;
 }
-
 /* Estilos para botones */
 .boton {
     display: inline-flex;
@@ -538,7 +482,6 @@ figcaption {
     box-shadow: var(--sombra-suave);
     transform: translateZ(0);
 }
-
 .boton::before {
     content: '';
     position: absolute;
@@ -549,53 +492,43 @@ figcaption {
     background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
     transition: var(--transicion-suave);
 }
-
 .boton:hover::before {
     left: 100%;
 }
-
 .boton--primario {
     background: var(--gradiente-principal);
     color: white;
 }
-
 .boton--primario:hover {
     transform: translateY(-2px) scale(1.03);
     box-shadow: var(--sombra-fuerte);
 }
-
 .boton--secundario {
     background: var(--gradiente-acento);
     color: white;
 }
-
 .boton--secundario:hover {
     transform: translateY(-2px) scale(1.03);
     box-shadow: var(--sombra-fuerte);
 }
-
 .boton__icono {
     margin-right: 8px;
     font-size: 1.2em;
     transition: var(--transicion-rapida);
 }
-
 .boton:hover .boton__icono {
     transform: scale(1.1) rotate(5deg);
 }
-
 /* Estilos para formulario */
 .formulario {
     max-width: 600px;
     margin: 30px 0;
 }
-
 .formulario__grupo {
     margin-bottom: 25px;
     position: relative;
     animation: formGroupSlide 0.6s ease-out;
 }
-
 @keyframes formGroupSlide {
     0% {
         opacity: 0;
@@ -606,7 +539,6 @@ figcaption {
         transform: translateX(0);
     }
 }
-
 .formulario__label {
     display: block;
     margin-bottom: 8px;
@@ -614,7 +546,6 @@ figcaption {
     color: var(--color-texto);
     font-size: 1.1em;
 }
-
 .formulario__input,
 .formulario__select,
 .formulario__textarea {
@@ -627,7 +558,6 @@ figcaption {
     background: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(5px);
 }
-
 .formulario__input:focus,
 .formulario__select:focus,
 .formulario__textarea:focus {
@@ -636,12 +566,10 @@ figcaption {
     box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
     transform: translateY(-1px) scale(1.01);
 }
-
 .formulario__textarea {
     resize: vertical;
     min-height: 120px;
 }
-
 /* Estilos para tarjeta - HOVER SIMPLIFICADO */
 .tarjeta {
     background: rgba(255, 255, 255, 0.95);
@@ -654,7 +582,6 @@ figcaption {
     border: 1px solid rgba(255, 255, 255, 0.2);
     animation: cardSlideUp 0.8s ease-out;
 }
-
 @keyframes cardSlideUp {
     0% {
         opacity: 0;
@@ -665,18 +592,15 @@ figcaption {
         transform: translateY(0) scale(1);
     }
 }
-
 /* Hover más simple para tarjetas */
 .tarjeta:hover {
     transform: translateY(-3px);
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
 }
-
 .tarjeta__imagen {
     position: relative;
     overflow: hidden;
 }
-
 .tarjeta__imagen img {
     width: 100%;
     height: 250px;
@@ -684,16 +608,13 @@ figcaption {
     transition: var(--transicion-suave);
     transform: scale(1);
 }
-
 /* CAMBIO CLAVE: Imagen hacia adentro */
 .tarjeta__imagen:hover img {
     transform: scale(0.95);
 }
-
 .tarjeta__contenido {
     padding: 30px;
 }
-
 .tarjeta__titulo {
     font-size: 1.8em;
     color: var(--color-subtitulo);
@@ -701,7 +622,6 @@ figcaption {
     font-weight: 700;
     animation: titleSlideIn 0.6s ease-out 0.2s both;
 }
-
 @keyframes titleSlideIn {
     0% {
         opacity: 0;
@@ -712,7 +632,6 @@ figcaption {
         transform: translateY(0);
     }
 }
-
 .tarjeta__descripcion-scroll {
     max-height: 200px;
     overflow-y: auto;
@@ -723,42 +642,34 @@ figcaption {
     border: 1px solid rgba(59, 130, 246, 0.1);
     backdrop-filter: blur(5px);
 }
-
 .tarjeta__descripcion-scroll::-webkit-scrollbar {
     width: 6px;
 }
-
 .tarjeta__descripcion-scroll::-webkit-scrollbar-track {
     background: rgba(0,0,0,0.1);
     border-radius: 3px;
 }
-
 .tarjeta__descripcion-scroll::-webkit-scrollbar-thumb {
     background: var(--gradiente-principal);
     border-radius: 3px;
 }
-
 .tarjeta__descripcion {
     line-height: 1.6;
     color: var(--color-texto-claro);
 }
-
 .tarjeta__video {
     margin: 25px 0;
     border-radius: 15px;
     overflow: hidden;
     box-shadow: var(--sombra-media);
 }
-
 .tarjeta__video iframe {
     border-radius: 15px;
 }
-
 .tarjeta__mas-informacion {
     text-align: center;
     margin-top: 25px;
 }
-
 /* Estilos para ejemplo */
 .ejemplo {
     padding: 30px;
@@ -769,7 +680,6 @@ figcaption {
     box-shadow: var(--sombra-suave);
     animation: exampleFloat 0.8s ease-out;
 }
-
 @keyframes exampleFloat {
     0% {
         opacity: 0;
@@ -780,31 +690,26 @@ figcaption {
         transform: translateY(0);
     }
 }
-
 .ejemplo__titulo {
     color: var(--color-exito);
     margin-bottom: 20px;
     font-size: 1.4em;
     font-weight: 600;
 }
-
 .ejemplo__texto {
     margin-bottom: 20px;
     color: var(--color-texto-claro);
     font-size: 1.1em;
 }
-
 .ejemplo__boton--activo {
     background: linear-gradient(135deg, var(--color-exito), #059669);
     color: white;
     animation: gentlePulse 3s ease-in-out infinite;
 }
-
 @keyframes gentlePulse {
     0%, 100% { transform: scale(1); box-shadow: var(--sombra-suave); }
     50% { transform: scale(1.02); box-shadow: var(--sombra-media); }
 }
-
 /* Estilos para pie de página */
 .pie__pagina {
     background: var(--gradiente-principal);
@@ -818,7 +723,6 @@ figcaption {
     overflow: hidden;
     animation: footerSlideUp 0.8s ease-out;
 }
-
 @keyframes footerSlideUp {
     0% {
         opacity: 0;
@@ -829,7 +733,6 @@ figcaption {
         transform: translateY(0);
     }
 }
-
 .pie__pagina::before {
     content: '';
     position: absolute;
@@ -840,36 +743,30 @@ figcaption {
     background: radial-gradient(circle, rgba(255,255,255,0.06) 0%, transparent 70%);
     animation: gentleRotate 40s linear infinite reverse;
 }
-
 .pie__texto {
     margin: 0;
     font-size: 1.1em;
     position: relative;
     z-index: 1;
 }
-
 .pie__a {
     color: var(--color-acento);
     text-decoration: none;
     font-weight: 600;
     transition: var(--transicion-suave);
 }
-
 .pie__a:hover {
     color: white;
     text-shadow: 0 0 8px rgba(245, 158, 11, 0.4);
 }
-
 /* Clase específica para la tabla de resumen */
 .tabla.comparativa {
     margin-top: 25px;
 }
-
 /* Efectos de scroll suave */
 html {
     scroll-behavior: smooth;
 }
-
 /* Adaptaciones responsivas */
 @media (max-width: 768px) {
     h1#principal {
@@ -905,12 +802,10 @@ html {
         padding: 20px;
     }
 }
-
 @media (max-width: 480px) {
     .container {
         padding: 10px;
     }
-    
     section {
         padding: 15px;
         margin: 20px 0;
@@ -933,13 +828,11 @@ html {
         font-size: 14px;
     }
 }
-
 /* Animaciones de entrada para elementos que aparecen al hacer scroll */
 @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
 }
-
 /* Animación suave para elementos interactivos */
 @keyframes gentleScale {
     0% { transform: scale(1); }
